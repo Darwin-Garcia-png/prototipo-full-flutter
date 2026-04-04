@@ -1,0 +1,36 @@
+name: farmabook_flutter
+description: "App de gestión para farmacia - FarmaBook"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.5.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  dio: ^5.7.0
+  flutter_secure_storage: ^9.2.4     # 10.0.0 puede tener issues en Windows/Linux
+  go_router: ^14.8.1                 # 14.x es seguro, evita migración pesada
+  intl: ^0.19.0
+  cupertino_icons: ^1.0.8
+  provider: ^6.0.0
+  fl_chart: ^0.69.0
+  web_socket_channel: ^3.0.3
+  image_picker: ^1.2.1
+  audioplayers: ^6.6.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.5.4               # Compatible con tu setup
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/sounds/
+    - web/construccion.png
